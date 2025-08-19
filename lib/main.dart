@@ -4,6 +4,7 @@ import 'package:meu_projeto_integrador/screens/home_screen.dart';
 import 'package:meu_projeto_integrador/screens/detail_screen.dart';
 import 'package:meu_projeto_integrador/screens/item_list_screen.dart';
 import 'package:meu_projeto_integrador/screens/gallery_screen.dart';
+import 'package:meu_projeto_integrador/screens/todo_list_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const HomeScreen(),
         '/items': (context) => const ItemListScreen(),
         '/gallery': (context) => const GalleryScreen(),
+        '/todos': (context) => const TodoListScreen(),
         '/details': (context) => const DetailScreen(
               itemId: 0,
               itemName: '',

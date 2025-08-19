@@ -24,12 +24,13 @@ class TodoService {
   }
 
   // Método para adicionar uma nova tarefa
-  
   Future<Todo> createTodo(Todo todo) async {
-    try{
+    try {
       final response = await http.post(
         Uri.parse('$_baseUrl/todos'),
-        headers: <String, String>{'Content-Type': 'application/json; charset=UTF-8'},
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=UTF-8'
+        },
         body: json.encode(todo.toJson()),
       );
 
@@ -38,8 +39,7 @@ class TodoService {
       } else {
         throw Exception('Falha ao criar a tarefa: ${response.statusCode}');
       }
-    }
-    on http.ClientException catch (e) {
+    } on http.ClientException catch (e) {
       throw Exception('Erro ao criar tarefa: $e');
     } catch (e) {
       throw Exception('Erro desconhecido: $e');
