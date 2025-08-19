@@ -103,6 +103,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: const Text('Ver Galeria'),
             ),
+            const SizedBox(height: 10),
+            Image.asset('/imagens/logo.jpeg',
+            height: 100,
+            width: 100,
+            ),
+            const SizedBox(height: 10),
+            Text('logo')
           ],
         ),
       ),

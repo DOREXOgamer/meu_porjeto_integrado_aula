@@ -7,8 +7,19 @@ class GalleryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // Lista de imagens do assets
     final List<String> imageAssets = [
-      'assets/images.jpeg',
-      'assets/download.jpeg',
+      'imagens/images.jpeg',
+      'imagens/download.jpeg',
+      'imagens/images.jpeg',
+      'imagens/download.jpeg',
+      'imagens/images.jpeg',
+      'imagens/download.jpeg',
+      'imagens/images.jpeg',
+      'imagens/download.jpeg',
+      'imagens/images.jpeg',
+      'imagens/download.jpeg',
+      'imagens/images.jpeg',
+      'imagens/download.jpeg',
+
     ];
 
     return Scaffold(
@@ -19,7 +30,7 @@ class GalleryScreen extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
+            crossAxisCount: 3,
             crossAxisSpacing: 8,
             mainAxisSpacing: 8,
             childAspectRatio: 1.0,
