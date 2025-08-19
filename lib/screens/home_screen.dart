@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meu_projeto_integrador/screens/detail_screen.dart';
 
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -91,8 +92,19 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: const Text('Ver Lista de Itens'),
             ),
+
             const SizedBox(height: 10),
-            
+            // Botão para navegar para a lista de tarefas
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/todos');
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+              ),
+              child: const Text('Ver Lista de Tarefas'),
+            ),
+            const SizedBox(height: 10),
             // Botão para navegar para a galeria
             ElevatedButton(
               onPressed: () {
